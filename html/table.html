@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16520364-assignmen1</title>
+    <link rel="stylesheet" href="assignment1.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./MDB-Free_4.19.1/css/bootstrap.min.css">
+</head>
+<body>
+    <section class="tables">
+        <div class="container-fluid">
+            <div class="card">
+              <div class="card-header d-flex align-items-center">
+                <h3 class="h4">Products list</h3>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table id="productTable" class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center">#</th>
+                        <th class="text-center">Product Name</th>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let product of product_list; let i = index">
+                        <th scope="row" class="align-middle text-center">1</th>
+                        <td class="align-middle text-center">
+                          <!-- <div class="product-img has-shadow"><img src={{product.image[0]}} alt="..." class="img-fluid"></div> -->
+                         iphone10
+                        </td>
+                        <td class="align-middle text-center">categories</td>
+                        <td class="align-middle text-center">32.000.000</td>
+                        <td class="text-center">
+                          <a href="file:///D:/learnning/hk9/lap%20trinh%20ung%20dung%20web/html/assignmen1.html">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                          </a>
+                          <span class="tab-space"></span>
+                          <button type="button" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Delete" (click)="delete_clicked(product._id, product.name)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>
