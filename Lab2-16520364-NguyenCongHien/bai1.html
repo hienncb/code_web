@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lab2.css">
+</head>
+
+<body>
+    <div style="display: flex; margin-left: 20px;">
+        <div style="width: 600px;">
+            <img src="./img/Untitled.png" width="600" height="300">
+            <div
+                style="margin: 50px; position: relative; margin-top: -100px; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;box-shadow: 5px 10px 18px #888888;">
+                <h3>Overview</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                    interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc <span
+                        class="dots" id="dots">...</span><span id="more">
+                        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+                        imperdiet
+                        sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                        non
+                        fermentum. Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                        massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                        ipsum
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                        tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                        tempor porta.</span></p>
+                <a id="btn" style="cursor: pointer; color: red;" id="myBtn">Read more &rsaquo;</a>
+                <a id="btn0" style="cursor: pointer; color: red; display: none;" id="myBtn">Read less &lsaquo;</a>
+            </div>
+        </div>
+
+        <div style="width: 600px; margin-left: 100px;">
+            <img src="./img/Untitled1.png" width="600" height="300">
+            <div
+                style="margin: 50px; position: relative; margin-top: -100px; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;box-shadow: 5px 10px 18px #888888;">
+                <h3>Mission & Value</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                    interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est,
+                    ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc <span
+                        class="dots1" id="dots1">...</span><span id="more1">
+                        sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+                        imperdiet
+                        sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+                        non
+                        fermentum. Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                        massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                        ipsum
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                        tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                        fermentum. Sed dapibus pulvinar nibh tempor porta. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel
+                        erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                        massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper
+                        ipsum
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                        tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                        tempor porta.</span></p>
+                <a id="btn1" style="cursor: pointer; color: red;">Read more &rsaquo; </a>
+                <a id="btn10" style="cursor: pointer; color: red; display: none;">Read less &lsaquo; </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () { // khi click vaof nút có id btn
+                $("#dots").hide(); // ẩn tag có id dots
+                $("#more").show(); // hiện tag có id more
+                $(this).hide(); // ẩn nút có id dots
+                $("#btn0").show(); // hiện nút btn0
+                // $(this).text("Read less")
+
+            });
+            $("#btn0").click(function () { // khi click vaof nút có id btn0
+                // $("#dots").hide();
+                // $("#more1").show();
+                $("#dots").show();// hiện tag có id dots
+                $("#more").hide();// ẩn tag có id more
+                $(this).hide();// hiện nút có id btn0
+                $("#btn").show(); // hiện nút btn
+            });
+            $("#btn1").click(function () {// khi click vaof nút có id btn0
+                // $("#dots").hide();
+                // $("#more1").show();
+                $("#dots1").hide();// ẩm tag có id dots1
+                $(this).hide();// ẩn nút có id btn1
+                $("#more1").show(); // hiên tag có id more
+                $("#btn10").show();// hiện nút btn10
+            });
+            $("#btn10").click(function () { // khi click vaof nút có id btn10
+                // $("#dots").hide();
+                // $("#more1").show();
+                $("#dots1").show(); // hiện tag có id dots1
+                $(this).hide(); // ẩn nút có id btn10
+                $("#more1").hide(); // ẩn tag có id more
+                $("#btn1").show();// hiện nút có id btn1
+            });
+        });
+        // $(document).ready(function () {
+
+        // });
+    </script>
+</body>
+
+</html>

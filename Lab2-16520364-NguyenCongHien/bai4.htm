@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lab2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--  sử dụng thư viên để dùng icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  sử dụng thư viên awesome 4.7 để dùng icon-->
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div
+        style="display: flex; justify-content: space-between;padding: 5px; padding-left: 160px; padding-right: 160px; background: #002147;">
+        <div style="display: flex">
+            <div><a href="#" class="head-link">(028) 372 52002</a></div>
+            <div><a href="#" class="head-link">info@uit.edu.vns</a></div>
+        </div>
+        <div style="display: flex">
+            <div><a href="#" class="head-link">Tuyển sinh</a></div>
+            <div><a href="#" class="head-link">Bảng vàng thành tích</a></div>
+            <div><a href="#" class="head-link">Thư viện</a></div>
+            <div><a href="#" class="head-link">Webmail SV</a></div>
+            <div><a href="#" class="head-link">Website ĐHQG</a></div>
+            <div style="margin-right: 5px;">
+                <a href="#">
+                    <img src="./img/vietnam-flag-icon-16.png" style="height: 15px; width: 20px;">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="./img/united-states-of-america-flag-icon-16.png" style="height: 15px;  width: 20px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        style="display: flex; justify-content: space-between;padding: 5px; padding-left: 160px; padding-right: 160px; padding-bottom: 10px;">
+        <div style="display: flex">
+
+            <img src="./img/banner-uit.png">
+            <img src="./img/hcld.png" width="68px" height="89.3px" style="margin-top: 20px;">
+            <div>
+
+            </div>
+        </div>
+        <div style="display: flex; border-style: groove; border-radius: 100px; border-color: azure; height: 30px; margin-top: 50px;box-sizing: border-box; padding-top: 3px;
+            padding-left: 5px;">
+            <div>
+                <input type="search" placeholder="Search.." name="search" style="border:0;">
+            </div>
+            <div style="margin-top: -3px;">
+                <img src="https://www.uit.edu.vn/sites/all/themes/open_framework/images/searchbutton.png">
+            </div>
+        </div>
+    </div>
+    <nav id="main-nav">
+        <ul id="main-menu" class="sm sm-blue">
+            <li class="home">
+                <a class="title-hearder" href="https://uit.edu.vn"><i class="fa fa-home"></i> Trang chủ <i
+                        class="fa fa-caret-down"></i></a>
+                <div id="homeDown" class="dropdown-content">
+                    <div style="padding: 10px;">
+                        <div style="color: black;">Đăng nhập</div>
+                        <div
+                            style="color: black; font-size: 0.8rem; font-weight: bold; margin-top: 10px; margin-bottom: 5px;">
+                            Tên người dùng <span style="color: red;">*</span></div>
+                        <input type="text">
+                        <div style="color: black; font-size: 0.8rem; margin-top: 5px; margin-bottom: 5px;">Dùng tài
+                            khoản chứng thực</div>
+                        <div
+                            style="color: black; font-size: 0.8rem; font-weight: bold; margin-top: 10px; margin-bottom: 5px;">
+                            Mật khẩu <span style="color: red;">*</span></div>
+                        <input type="password">
+                        <div style="color: black; font-size: 0.8rem;margin-top: 5px; margin-bottom: 5px;"> Mật khẩu
+                            chứng thực</div>
+                        <button>Đăng nhập</button>
+                    </div>
+                </div>
+            </li>
+            <li class="news"><a class="title-hearder" href="https://uit.edu.vn"> Tin tức <i
+                        class="fa fa-caret-down"></i></a>
+                <div id="newsDown" style="
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 180px;
+                overflow: auto;
+                margin-top: 18px;
+                height: 0px;
+                z-index: 1;
+                box-shadow: 5px 10px 18px #888888;">
+                    <div style="display: flex; ">
+                        <div style="width: 250px; background-color: white; padding: 10px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> THÔNG TIN CHUNG</div>
+                            <div class="contain-list1">Thông tin - Thông báo chung</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thông báo
+                                    chung </a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thông tin
+                                    tuyển sinh</a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thông tin
+                                    hoạt động</a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tin tức
+                                    CNTT</a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tin tức giáo
+                                    dục</a></div>
+                        </div>
+                        <div style="width: 250px; background-color: white; padding: 10px;">
+                            <div style="color: black; font-size: 0.8rem; font-weight: bold;">RSS</div>
+                            <div class="contain-list1">Cung cấp thông tin cập nhật</div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">RSS - Thông
+                                    báo chung</a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">RSS - Tin
+                                    hoạt động</a></div>
+                            <hr style="color: blanchedalmond;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">RSS - Tin
+                                    tức CNTT</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="introduce"><a class="title-hearder" href="https://uit.edu.vn">Giới thiệu <i
+                        class="fa fa-caret-down"></i></a>
+                <div>
+                    <div id="introduceDown" style="
+                        position: absolute;
+                        background-color: white;
+                        min-width: 180px;
+                        overflow: auto;
+                        height: 0px; 
+                        margin-top: 18px;
+                        z-index: 1;
+                        box-shadow: 5px 10px 18px #888888;">
+                        <div style="padding: 10px;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tổng
+                                    quan</a> </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tầm nhìn -
+                                    Sứ mạng - Triết lý GD </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Nhận diện
+                                    thương hiệu </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Kế hoạch -
+                                    Chiến lược </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Cơ cấu tổ
+                                    chức </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Hội đồng
+                                    Trường </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Hội đồng
+                                    khoa học </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thông tin
+                                    quy hoạch </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đảm bảo chất
+                                    lượng </a></div>
+                            <hr>
+
+                            <div id="rules" class="contain-list">Quy chế - Nội quy <span style="padding-left: 60px;">
+                                    &#10095;</span></div>
+                            <!-- <div id="introduceDown-mor" style="
+                                    position: unset;
+                                    background-color: white;
+                                    min-width: 180px;
+                                    overflow: auto;
+                                    padding: 10px;
+                                    margin-left: 100px;
+                                    z-index: 1;">
+                                    <div>
+                                        <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list" ></a>Quy chế dân chủ cơ sở</div>
+                                        <hr>
+                                        <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list" ></a>Nội quy cơ quan</div>
+                                        <hr>
+                                        <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list" ></a>Quy chế công tác giáo trình</div>
+                                    </div>
+                                </div> -->
+
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Hình ảnh
+                                </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Liên hệ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="admissions"><a class="title-hearder" href="https://uit.edu.vn">Tuyển sinh <i
+                        class="fa fa-caret-down"></i></a>
+                <div id="admissionsDown" style="position: absolute;
+                background-color: white;
+                min-width: 380px;
+                overflow: auto;
+                height:  0px; 
+                margin-top: 18px;
+                z-index: 1;
+                box-shadow: 5px 10px 18px #888888;">
+                    <div style="display: flex; padding: 20px;">
+                        <div style="width: 180px;">
+                            <div class="contain-list"> THÔNG TIN </div>
+                            <div class="contain-list1">Các số liệu tuyển sinh</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Giới thiệu
+                                    chung</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Điểm chuẩn
+                                    hàng năm</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Tư vấn
+                                    tuyển sinh</a></div>
+                        </div>
+                        <div style="padding-left: 20px; padding-right: 20px; width: 250px;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">ĐẠI HỌC</a>
+                            </div>
+
+                            <div class="contain-list1">Đào tạo đại học</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Quy chế
+                                    tuyển sinh Đại học TXQM</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    Đại học chính quy</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    Đại học từ xa qua mạng</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    VB2</a></div>
+                        </div>
+                        <div style="width: 200px;">
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">SAU ĐẠI
+                                    HỌC</a></div>
+                            <div class="contain-list1">Đào tạo sau đại học</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    Thạc sĩ, Tiến sĩ</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="train"><a class="title-hearder" href="https://uit.edu.vn"> Đào tạo <i
+                        class="fa fa-caret-down"></i></a>
+                <div id="trainDown" style="position: absolute;
+                background-color: white;
+                min-width: 800px;
+                overflow: auto;
+                height: 0px; 
+                z-index: 1;
+                margin-top: 18px;
+                margin-left: -425px;
+                box-shadow: 5px 10px 18px #888888;">
+                    <div style="display: flex; padding: 20px;">
+                        <div style="width: 230px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> ĐẠI HỌC CHÍNH QUY</div><br>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> An toàn
+                                    Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Công nghệ
+                                    Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Khoa học
+                                    Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Hệ thống
+                                    Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Kỹ thuật
+                                    Phần mềm</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Kỹ thuật
+                                    Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Truyền
+                                    thông & MMT</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Cử nhân Tài
+                                    năng</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Chương
+                                    trình Chất lượng cao</a></div>
+                        </div>
+                        <div style="padding-left: 50px; padding-right: 50px; width: 300px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> ĐÀO TẠO QUỐC TẾ</div><br>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"
+                                    style="padding-left: -35px;"> Chương trình Tiên tiến</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong`-tin-thong-bao" class="contain-list">Chương
+                                    trình liên kết BCU</a></div>
+                        </div>
+                        <div style="width: 250px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> SAU ĐẠI HỌC</div> <br>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Các hướng
+                                    nghiên cứu của NCS</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Đào tạo
+                                    Thạc sĩ Khoa học Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đào tạo Tiến
+                                    sĩ Khoa học Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Đào tạo
+                                    Thạc sĩ Công nghệ Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đào tạo Tiến
+                                    sĩ Công nghệ Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đào tạo Thạc
+                                    sĩ Hệ thống Thông tin</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="title-hearder" id="a">Nghiên cứu <i class="fa fa-caret-down"></i></a>
+                <ul id="myDropdown" class="dropdown-content" style="margin-top: 18px;">
+                    <div><a href="#" class="contain-list">Kết quả công bố khoa học</a></div>
+                    <hr>
+                    <div><a href="#" class="contain-list">Hội nghị - Hội thảo</a></div>
+                    <hr>
+                    <div><a href="#" class="contain-list" class="disabled">Hợp tác quốc tế</a></div>
+                    <hr>
+                    <div><a href="#" class="contain-list">Khoa học công nghệ</a></div>
+                </ul>
+            </li>
+            <li class="unit"><a class="title-hearder" href="#">Các đơn vị <i class="fa fa-caret-down"></i></a>
+                <div id="unitDown" style="
+                position: absolute;
+                background-color: white;
+                min-width: 800px;
+                overflow: auto;
+                height: 0px; 
+                z-index: 1;
+                margin-top: 18px;
+                margin-left: -425px;
+                box-shadow: 5px 10px 18px #888888;">
+                    <div style="display: flex; padding: 20px;">
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: bold;"> KHOA - BỘ MÔN</div>
+                            <div class="contain-list1">Khoa - Bộ môn trực thuộc trường</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa Công
+                                    nghệ Phần mềm</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa Hệ
+                                    thống Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa Kỹ
+                                    thuật Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa MMT &
+                                    Truyền thông</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa Khoa
+                                    học Máy tính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Khoa Khoa
+                                    học và Kỹ thuật Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Bộ môn Toán
+                                    Lý</a></div>
+                        </div>
+                        <div style="padding-left: 20px; padding-right: 20px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> PHÒNG - BAN </div>
+                            <div class="contain-list1"> Các Phòng ban - chức năng</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tổ chức -
+                                    Hành chính</a> </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Kế hoạch -
+                                    Tài chính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đào tạo Đại
+                                    học</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đào tạo SĐH
+                                    & KHCN</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Quan hệ Đối
+                                    ngoại</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Quản trị
+                                    Thiết bị</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Công tác
+                                    Sinh viên</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thanh tra -
+                                    Pháp chế - ĐBCL</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Quản lý cơ
+                                    sở</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Dữ liệu &
+                                    CNTT</a></div>
+                        </div>
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: bold;"> TRUNG TÂM - PTN</div>
+
+                            <div class="contain-list1">Trung tâm - Phòng thí nghiệm</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thư viện</a>
+                            </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">TT Phát
+                                    triển CNTT</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">PTN TT Đa
+                                    phương tiện</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">PTN Hệ thống
+                                    Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">PTN An toàn
+                                    Thông tin</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Văn phòng
+                                    các CTĐB </a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Trung tâm An
+                                    ninh mạng</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Trung tâm
+                                    Ngoại ngữ</a></div>
+                        </div>
+                        <div style="padding-left: 20px">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> ĐOÀN THỂ</div>
+
+                            <div class="contain-list1">Các tổ chức Đoàn thể</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đảng Uỷ</a>
+                            </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Công
+                                    đoàn</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đoàn thanh
+                                    niên</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="search"><a class="title-hearder" href="#"> Tra cứu <i class="fa fa-caret-down"></i></a>
+                <ul id="searchDown" class="dropdown-content" style="margin-top: 18px;">
+                    <li><a href="#" class="contain-list">Kết quả công bố khoa học</a></li>
+                    <hr>
+                    <li><a href="#" class="contain-list">Hội nghị - Hội thảo</a></li>
+                    <hr>
+                    <li><a href="#" class="contain-list" class="disabled">Hợp tác quốc tế</a></li>
+                    <hr>
+                    <li><a href="#" class="contain-list">Khoa học công nghệ</a></li>
+                </ul>
+            </li>
+            <li class="network"><a class="title-hearder" href="#"> Liên kết <i class="fa fa-caret-down"></i></a>
+                <div id="networkDown" style="position: absolute;
+                background-color: white;
+                min-width: 700px;
+                overflow: auto;
+                height: 0px; 
+                margin-top: 18px;
+                margin-left: -650px;
+                z-index: 1;
+                box-shadow: 5px 10px 18px #888888;">
+                    <div style="display: flex; padding: 20px;">
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: bold;"> TRUNG TÂM - PTN</div>
+                            <div class="contain-list1">Dành cho sinh viên</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Webmail</a>
+                            </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Cổng thông
+                                    tin đào tạo ĐH</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Cổng thông
+                                    tin đào tạo SĐH</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng Công
+                                    tác Sinh viên</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Trung tâm
+                                    Phát triển CNTT</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đoàn thanh
+                                    niên</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list"> Diễn đàn
+                                    sinh viên</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Website môn
+                                    học (ĐH)</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Website môn
+                                    học (SĐH)</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Microsoft
+                                    Azure</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tài khoản
+                                    chứng thực</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Trung tâm
+                                    Ngoại ngữ</a></div>
+
+                        </div>
+                        <div style="padding-left: 40px; padding-right: 40px;">
+                            <div style="font-size: 0.9rem; font-weight: bold;"> CB-GV</div>
+                            <div class="contain-list1">Dành cho CB-CNV</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Webmail</a>
+                            </div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Công
+                                    đoàn</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng Tổ
+                                    chức - Hành chính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng Kế
+                                    hoạch - Tài chính</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng Quản
+                                    trị Thiết bị</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng Dữ
+                                    liệu & CNTT</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Phòng
+                                    TTPC-ĐBCL</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Ban Quản lý
+                                    cơ sở</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Microsoft
+                                    Azure</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tài khoản
+                                    chứng thực</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Cổng thông
+                                    tin CB-GV</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Công tác
+                                    giáo trình</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Website Khoa
+                                    học công nghệ</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Đăng ký VPS
+                                    trên Cloud</a></div>
+
+                        </div>
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: bold;">KHÁCH</div>
+                            <div class="contain-list1">Dành cho khách</div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    Đại học chính quy</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    CN từ xa (Ứng dụng)</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Tuyển sinh
+                                    CN từ xa (Mạng)</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Báo cáo tự
+                                    đánh giá</a></div>
+                            <hr>
+                            <div> <a href="https://www.uit.edu.vn/thong-tin-thong-bao" class="contain-list">Thông tin
+                                    liên hệ</a></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a class="title-hearder" href="#"> Tuyển dụng </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="https://www.uit.edu.vn/sites/vi/files/slider/baner_vnul.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.uit.edu.vn/sites/vi/files/slider/banner_tansv_2020.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.uit.edu.vn/sites/vi/files/slider/td_2019.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.uit.edu.vn/sites/vi/files/slider/bannerweb.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.uit.edu.vn/sites/vi/files/slider/bannerwebuit_tansv2020.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center;">
+        <div>
+            <div class="header-content">
+                HOẠT ĐỘNG SINH VIÊN
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"><img src="./img/nenvahoa.jpg" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <!-- <h3 class="header-content1">Acoustic Night: “NẾN VÀ HOA”</h3> -->
+                    <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">Acoustic
+                            Night: “NẾN VÀ HOA” <img src="img/new.gif" width="32px" height="16px"> </a></h3>
+                    <p class="demo-content">CLB Văn nghệ Khoa học Máy tính Pey Team tổ chức đêm nhạc Acoustic với chủ đề
+                        ‘Nến và Hoa” nhằm chào mừng ngày 20/10. Với ngọn nến lung linh, cùng...</p>
+                    <!-- <a id="btn" style="cursor: pointer; color: red;" id="myBtn">Read more &rsaquo;</a>
+                    <a id="btn0" style="cursor: pointer; color: red; display: none;" id="myBtn">Read less &lsaquo;</a> -->
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                        position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Cuộc thi ảnh UIT YOUTH-CLOUD - cùng K2020 lưu trữ dữ liệu thanh... (22-10-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;Tổ
+                        chức thành công Đại hội Đại biểu Hội Sinh viên Việt Nam... (22-10-2020)<img src="img/new.gif"
+                            width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Đại hội Đại biểu Hội Sinh viên Việt Nam - Trường Đại học Công... (22-10-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        UIT
+                        Talk số 3 - Kỹ năng học ngoại ngữ hiệu quả (10-10-2020)</a>
+                    <div id="btn-more1" class="btn-more" onclick="window.open('https://www.uit.edu.vn/')">
+                        <div style="padding: 5px; font-size: 0.8rem; background-color: #009ED8;">Xem thêm</div>
+                        <div class="more-btn" id="more-btn1">&rsaquo;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="header-content">
+                TIN UIT
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"> <img src="./img/cntt.jpg" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <!-- <h3 class="header-content1">Chuyên đề Seminar ''Hỗ trợ kinh nghiệm thực hiện hoàn</h3> -->
+                    <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">Chuyên
+                            đề
+                            Seminar ''Hỗ trợ kinh nghiệm thực hiện hoàn<img src="img/new.gif" width="32px"
+                                height="16px">
+                        </a></h3>
+                    <p class="demo-content">Nhằm giúp các Anh/ Chị học viên có thêm kinh nghiệm để hoàn thành luận văn
+                        tốt
+                        nghiệp, phòng Đào tạo Sau đại học và Khoa học Công nghệ trường đại học...</p>
+                    <!-- <a id="btn" style="cursor: pointer; color: red;" id="myBtn">Read more &rsaquo;</a>
+                    <a id="btn0" style="cursor: pointer; color: red; display: none;" id="myBtn">Read less &lsaquo;</a> -->
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                        position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Tuyển dụng nhân sự phòng Tổ chức hành chính - Đại học Công nghệ... (22-10-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;Phát
+                        biểu Khai giảng năm học 2020 - 2021 của Hiệu trưởng Trường... (19-10-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        CÔNG BỐ HỌC BỔNG "HƯỚNG VỀ MIỀN TRUNG" (19-10-2020) <img src="img/new.gif" width="32px"
+                            height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Hơn 1500 tân sinh viên tham dự lễ khai giảng năm học 2020-2021 (16-10-2020)</a>
+                    <div id="btn-more2" class="btn-more" onclick="window.open('https://www.uit.edu.vn/')">
+                        <div style="padding: 5px; font-size: 0.8rem; background-color: #009ED8;">Xem thêm</div>
+                        <div class="more-btn" id="more-btn2">&rsaquo;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="header-content">
+                TUYỂN SINH
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"><img src="./img/default_image.png" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <!-- <h3 class="header-content1">[2020] Thông báo điểm chuẩn trúng tuyển vào Trường ĐH Công nghệ</h3> -->
+                    <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">[2020]
+                            Thông
+                            báo điểm chuẩn trúng tuyển vào Trường ĐH Công nghệ <img src="img/new.gif" width="32px"
+                                height="16px"> </a></h3>
+                    <p class="demo-content">THÔNG BÁO ĐIỂM CHUẨN TRÚNG TUYỂN VÀO TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN THEO
+                        PHƯƠNG THỨC XÉT TUYỂN DỰA TRÊN KẾT QUẢ KỲ THI TỐT NGHIỆP THPT NĂM 2020...</p>
+                    <!-- <a id="btn" style="cursor: pointer; color: red;" id="myBtn">Read more &rsaquo;</a>
+                    <a id="btn0" style="cursor: pointer; color: red; display: none;" id="myBtn">Read less &lsaquo;</a> -->
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                        position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        [2020] Thông báo kết quả trúng tuyển kỳ tuyển sinh văn bằng hai... (28-09-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;[2020]
+                        Thông báo điểm chuẩn trúng tuyển diện xét tuyển dựa vào... (23-09-2020) <img src="img/new.gif"
+                            width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        [2020] Thông báo học bổng tuyển sinh chương trình liên kết với... (16-09-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        [2020] Thông báo về việc xác nhận nhập học cho thí sinh đã trúng... (10-09-2020)</a>
+                    <div id="btn-more3" class="btn-more" onclick="window.open('https://www.uit.edu.vn/')">
+                        <div style="padding: 5px; font-size: 0.8rem; background-color: #009ED8;">Xem thêm</div>
+                        <div class="more-btn" id="more-btn3">&rsaquo;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+        <div>
+            <div class="header-content">
+                SAU ĐẠI HỌC
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"> <img src="./img/default_image.png" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">Thông
+                            báo buổi tư vấn tuyển sinh Sau đại học đợt 2/2020 <img src="img/new.gif" width="32px"
+                                height="16px"> </a></h3>
+                    <p class="demo-content">Mời các bạn tham dự buổi tư vấn tuyển sinh đào tạo thạc sĩ của Trường Đại
+                        học Công nghệ Thông tin vào sáng chủ nhật 01/11/2020 Thời gian : 10g00 -...</p>
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                            position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Thông báo chiêu sinh lớp ôn tập MÔN TIẾNG ANH tuyển sinh chương... (01-09-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;Thông
+                        báo lịch ôn tập tuyển sinh chương trình đào tạo thạc sĩ... (01-09-2020) <img src="img/new.gif"
+                            width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Thông báo sinh hoạt đầu khoá cao học khoá 15 đợt 1 năm 2020 (30-07-2020) <img src="img/new.gif"
+                            width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Thông báo học phí khóa 15 đợt 1 năm 2020 (30-07-2020)</a>
+                    <div id="btn-more4" class="btn-more" onclick="window.open('https://www.uit.edu.vn/')">
+                        <div style="padding: 5px; font-size: 0.8rem; background-color: #009ED8;">Xem thêm</div>
+                        <div class="more-btn" id="more-btn4">&rsaquo;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="header-content">
+                GIỚI THIỆU TRƯỜNG
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"><img src="./img/tong-quan.jpg" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <!-- <h3 class="header-content1">Overview</h3> -->
+                    <!-- <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">Thông
+                            báo buổi tư vấn tuyển sinh Sau đại học đợt 2/2020 <img src="img/new.gif" width="32px" height="16px"> </a></h3> -->
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                                position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <p class="demo-content1">Trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh
+                        (ĐHQG-HCM) là trường đại học công lập đào tạo về công nghệ thông tin và truyền thông (CNTT&TT)
+                        được thành lập theo quyết định số 134/2006/QĐ-TTg ngày 08/06/2006 của Thủ tướng Chính phủ trên
+                        cơ sở Trung tâm Phát triển Công nghệ Thông tin. Là trường thành viên của ĐHQG-HCM, trường ĐH
+                        CNTT có nhiệm vụ đào tạo nguồn nhân lực công nghệ thông tin góp phần tích cực vào sự phát triển
+                        của nền công nghiệp công nghệ thông tin Việt Nam, đồng thời tiến hành nghiên cứu khoa học và
+                        chuyển giao công nghệ thông tin tiên tiến, đặc biệt là hướng vào các ứng dụng nhằm góp phần đẩy
+                        mạnh sự nghiệp công nghiệp hóa, hiện đại hóa đất nước.</span></p>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="header-content">
+                THÔNG TIN - THÔNG BÁO
+            </div>
+            <div class="contain" style="box-shadow: 5px 10px 18px #888888;">
+                <div class="thumbnail"> <img src="./img/tb.png" width="325" height="200"></div>
+
+                <div
+                    style=" position: relative; text-align:justify; background-color: white; padding: 10px; padding: 10px; padding-left: 20px; padding-right: 20px;">
+                    <!-- <h3 class="header-content1">[TCHC] 97/TB-ĐHCNTT - Thông báo v/v tuyển dụng nhân sự</h3> -->
+                    <h3> <a class="header-content-demo" href="https://www.uit.edu.vn/acoustic-night-nen-va-hoa">[TCHC]
+                            97/TB-ĐHCNTT - Thông báo v/v tuyển dụng nhân sự <img src="img/new.gif" width="32px"
+                                height="16px"> </a></h3>
+                    <p class="demo-content">Trường Đại học Công nghệ Thông tin (ĐHCNTT) trực thuộc Đại học Quốc gia TP.
+                        Hồ Chí Minh, là một trong những trường đại học công lập hàng đầu có uy...</p>
+                    <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                        <div style="background-color: #009ED8; display: inline-block; height: 3px; width: 20px;
+                            position: relative; margin-left: 10px; margin-right: 10px; border-radius: 10px;"></div>
+                        <div style="width: 40px; height: 3px; background-color: grey;  border-radius: 10px;"></div>
+                    </div>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        [TCHC] 56/TB-ĐHCNTT - Thông báo v/v tuyển dụng nhân sự (20-07-2020) <img src="img/new.gif"
+                            width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;Hội
+                        nghị tổng kết, đánh giá 5 năm (2015 - 2019) công tác đảm bảo... (15-06-2020)<img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        Thông báo v/v tạm ngừng hoạt động tại trường từ ngày 01/04/2020 (31-03-2020) <img
+                            src="img/new.gif" width="32px" height="16px"></a>
+                    <a class="demo-content"
+                        href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan">&rsaquo;
+                        [TCHC] 20/TB-ĐHCNTT - Thông báo v/v tuyển dụng nhân sự (27-02-2020)</a>
+
+                    <div id="btn-more5" class="btn-more" onclick="window.open('https://www.uit.edu.vn/')">
+                        <div style="padding: 5px; font-size: 0.8rem; background-color: #009ED8;">Xem thêm</div>
+                        <div class="more-btn" id="more-btn5">&rsaquo;</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #103157">
+        <div style="display: flex;  justify-content: center; padding-bottom: 20px; padding-top: 10px;">
+            <div style="width: 430px; margin-right: 30px;">
+                <img src="https://www.uit.edu.vn/sites/vi/files/uploads/images/banner_footer.png">
+                <div class="description">
+                    SỨ MẠNG<br><br>
+
+                    - Trường Đại học Công nghệ Thông tin là một trung tâm đào tạo đại học, sau đại học cung cấp nguồn
+                    nhân
+                    lực chất lượng cao, nhằm đáp ứng nhu cầu của thị trường lao động và phục vụ cộng đồng.<br><br>
+
+                    - Trường Đại học Công nghệ Thông tin là một trung tâm hàng đầu về nghiên cứu khoa học và chuyển giao
+                    công nghệ về công nghệ thông tin – truyền thông và các lĩnh vực liên quan.<br><br>
+
+                    TẦM NHÌN<br><br>
+
+                    Trường Đại học Công nghệ Thông tin trở thành trường đại học uy tín về công nghệ thông tin – truyền
+                    thông
+                    và các lĩnh vực liên quan trong khu vực Châu Á.
+                </div>
+            </div>
+            <div style="width: 300px; margin-top: 10px; margin-right: 30px;">
+                <div class="footer-link" style="margin-top: 10px;">
+                    LIÊN KẾT NHANH<br><br>
+                    <div style="margin-top: 50px;">
+                        <a id="link1" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Trang tuyển sinh</a><br><br>
+
+                        <a id="link2" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Đào tạo đại học</a><br><br>
+                        <a id="link3" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Đào tạo Sau đại học</a><br><br>
+                        <a id="link4" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Văn phòng Các chương trình đặc biệt</a><br><br>
+                        <a id="link5" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Phòng Công tác sinh viên</a><br><br>
+                        <a id="link6" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Thư viện</a><br><br>
+                        <a id="link7" class="footer-link12"
+                            href="https://www.uit.edu.vn/cuoc-thi-anh-uit-youth-cloud-cung-k2020-luu-tru-du-lieu-thanh-xuan"
+                            onmouseenter="animation(this)" onmouseleave="onmouseleaveleave(this)">&rsaquo;
+                            Forum</a><br><br>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 300px; margin-top: 10px; ">
+                <div class="footer-link" style="margin-top: 10px;">
+                    LIÊN HỆ<br><br>
+                    <div style="margin-top: 50px;">
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <i class="material-icons" style="    left: 0;
+                            top: 5px;
+                            text-align: center;
+                            font-size: 14px;
+                            width: 43px;
+                            height: 30px;
+                            line-height: 30px;background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);">location_on</i>
+                            <div class="footer-link1" style="margin-left: 5px;">
+                                <div>ĐỊA CHỈ</div>
+                                <div style="font-size: 0.9rem;">Khu phố 6, P.Linh Trung, Q.Thủ Đức, Tp.Hồ Chí Minh</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <i class="fa fa-phone" style="    left: 0;
+                            top: 5px;
+                            text-align: center;
+                            font-size: 14px;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);"></i>
+                            <div class="footer-link1" style="margin-left: 5px;">
+                                <div>ĐIỆN THOẠI</div>
+                                <div style="font-size: 0.9rem;">(028) 372 52002</div><br>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <i class="fa fa-fax" style="    left: 0;
+                            top: 5px;
+                            text-align: center;
+                            font-size: 14px;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);"></i>
+                            <div class="footer-link1" style="margin-left: 5px;">
+                                <div>FAX</div>
+                                <div style="font-size: 0.9rem;">(028) 372 52148
+                                </div><br>
+                            </div>
+                        </div>
+                        <div style="display: flex; margin-bottom: 10px;">
+                            <i class="material-icons" style="    left: 0;
+                            top: 5px;
+                            text-align: center;
+                            font-size: 14px;
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);">email</i>
+                            <div class="footer-link1" style="margin-left: 5px;">
+                                <div>EMAIL</div>
+                                <div style="font-size: 0.9rem;">info@uit.edu.vn</div><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            style="display: flex; background-color: #002147; padding: 10px; color: white; font-size: 0.9rem; justify-content: center;">
+            <div style="margin-top: 20px;">
+                © Copyright Trường Đại
+                học Công nghệ Thông tin</div>
+            <div style="margin-left: 550px;">
+                <a href="#" class="fa fa-facebook fa1"></a>
+                <a href="#" class="fa fa-twitter fa1"></a>
+                <a href="#" class="fa fa-youtube fa1"></a>
+                <a href="#" class="fa fa-google fa1"></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        function animation(x) { // đổi màu khi chỉ chuột vào các link cuối trang
+            x.style.color = "orange"
+        }
+        function onmouseleaveleave(x) {
+            x.style.color = "white"
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn-more1").mouseenter(function () { // khi chỉ trỏ chuột vàc padding-left ra 10
+                $("#more-btn1").stop();
+                $("#more-btn1").animate({
+                    'padding-left': '10px'
+                })
+            });
+            $("#btn-more1").mouseleave(function () {// khi chỉ trỏ chuột ra trở về vị trí bán đầu
+                $("#more-btn1").stop();
+                $("#more-btn1").animate({
+                    'padding-left': '0px'
+                });
+            })
+            $("#btn-more2").mouseenter(function () {// khi chỉ trỏ chuột vàc padding-left ra 10
+                $("#more-btn2").stop();
+                $("#more-btn2").animate({
+                    'padding-left': '10px'
+                })
+            });
+            $("#btn-more2").mouseleave(function () {// khi chỉ trỏ chuột ra trở về vị trí bán đầu
+                $("#more-btn2").stop();
+                $("#more-btn2").animate({
+                    'padding-left': '0px'
+                });
+            })
+            $("#btn-more3").mouseenter(function () {// khi chỉ trỏ chuột vàc padding-left ra 10
+                $("#more-btn3").stop();
+                $("#more-btn3").animate({
+                    'padding-left': '10px'
+                })
+            });
+            $("#btn-more3").mouseleave(function () {// khi chỉ trỏ chuột ra trở về vị trí bán đầu
+                $("#more-btn3").stop();
+                $("#more-btn3").animate({
+                    'padding-left': '0px'
+                });
+            })
+            $("#btn-more").mouseenter(function () {// khi chỉ trỏ chuột vàc padding-left ra 10
+                $("#more-btn4").stop();
+                $("#more-btn4").animate({
+                    'padding-left': '10px'
+                })
+            });
+            $("#btn-more4").mouseleave(function () {// khi chỉ trỏ chuột ra trở về vị trí bán đầu
+                $("#more-btn4").stop();
+                $("#more-btn4").animate({
+                    'padding-left': '0px'
+                });
+            })
+            $("#btn-more").mouseenter(function () {// khi chỉ trỏ chuột vàc padding-left ra 10
+                $("#more-btn5").stop();
+                $("#more-btn5").animate({
+                    'padding-left': '10px'
+                })
+            });
+            $("#btn-more5").mouseleave(function () {// khi chỉ trỏ chuột ra trở về vị trí bán đầu
+                $("#more-btn5").stop();
+                $("#more-btn5").animate({
+                    'padding-left': '0px'
+                });
+            })
+
+        });
+    </script>
+
+    <script> // show animate ở thanh công cụ khi trỏ chột vào và ẩn nó đi khi rê chuột đi 
+        $(document).ready(function () {
+            $(".dropdown").mouseenter(function () { // hiện ra bảng ghiên cứu
+                $("#myDropdown").stop();
+                $("#myDropdown").animate({
+                    height: '220px',
+                    // width: '180px'
+                })
+            });
+            $(".dropdown").mouseleave(function () { // ẩn đi bảng ghiên cứu
+                $("#myDropdown").stop();
+                $("#myDropdown").animate({
+                    height: '0px',
+                    // width: '180px',
+                }, 100);// 100 là thời gian ẩn đi 
+            })
+            $(".home").mouseenter(function () { // hiện ra bảng đăng nhập
+                $("#homeDown").stop();
+                $("#homeDown").animate({
+                    height: '220px',
+                    width: '200px'
+                })
+            });
+            $(".home").mouseleave(function () { // ẩn đi bảng  đăng nhập
+                $("#homeDown").stop();
+                $("#homeDown").animate({
+                    height: '0px',
+                    width: '200px',
+                }, 100);
+            })
+            $(".news").mouseenter(function () {// hiện ra bảng tin tức
+                $("#newsDown").stop();
+                $("#newsDown").animate({
+                    height: '230px',
+                    width: '500px'
+                })
+            });
+            $(".news").mouseleave(function () { // ẩn đi bảng tin tức
+                $("#newsDown").stop();
+                $("#newsDown").animate({
+                    height: '0px',
+                    width: '500px',
+                }, 100);
+            })
+            $(".introduce").mouseenter(function () {// hiện ra bảng giới thiệu
+                $("#introduceDown").stop();
+                $("#introduceDown").animate({
+                    height: '440px',
+                    // width: '500px'
+                })
+            });
+            $(".introduce").mouseleave(function () {
+                $("#introduceDown").stop(); // ẩn đi bảng giới thiệu
+                $("#introduceDown").animate({
+                    height: '0px',
+                    // width: '500px',
+                }, 100);
+            })
+            $(".admissions").mouseenter(function () {// hiện ra bảng tuyển dụng
+                $("#admissionsDown").stop();
+                $("#admissionsDown").animate({
+                    height: '280px',
+                    // width: '500px'
+                })
+            });
+            $(".admissions").mouseleave(function () { // ẩn đi bảng tuyển dụng
+                $("#admissionsDown").stop();
+                $("#admissionsDown").animate({
+                    height: '0px',
+                    // width: '500px',
+                }, 100);
+            })
+            $(".train").mouseenter(function () {// hiện ra bảng đào tạo
+                $("#trainDown").stop();
+                $("#trainDown").animate({
+                    height: '400px',
+                    // width: '500px'
+                })
+            });
+            $(".train").mouseleave(function () { // ẩn đi bảng bảng đào tạo
+                $("#trainDown").stop();
+                $("#trainDown").animate({
+                    height: '0px',
+                    // width: '500px',
+                }, 100);
+            })
+            $(".unit").mouseenter(function () {// hiện ra bảng tra cứu
+                $("#unitDown").stop();
+                $("#unitDown").animate({
+                    height: '450px',
+                    // width: '500px'
+                })
+            });
+            $(".unit").mouseleave(function () { // ẩn đi bảng tra cứu
+                $("#unitDown").stop();
+                $("#unitDown").animate({
+                    height: '0px',
+                }, 100);
+            })
+            $(".search").mouseenter(function () { // hiện ra bảng tra cứu
+                $("#searchDown").stop();
+                $("#searchDown").animate({
+                    height: '220px',
+                    // width: '500px'
+                })
+            });
+            $(".search").mouseleave(function () { // ẩn đi bảng tra cứu
+                $("#searchDown").stop();
+                $("#searchDown").animate({
+                    height: '0px',
+                    // width: '500px',
+                }, 100);
+            })
+            $(".network").mouseenter(function () { // hiện ra bảng liên kết
+                $("#networkDown").stop();
+                $("#networkDown").animate({
+                    height: '580px',
+                    // width: '500px'
+                })
+            });
+            $(".network").mouseleave(function () {  // ẩn đi bảng liên kết
+                $("#networkDown").stop();
+                $("#networkDown").animate({
+                    height: '0px',
+                    // width: '500px',
+                }, 100);
+            })
+        });
+    </script>
+
+    <script> // để di chuyển hình ảnh dưới thanh công cụ
+        var slideIndex = 1;
+        showSlides(slideIndex); // mặc định là hình đầu tiên
+
+        function plusSlides(n) { // chuyển hình 
+            showSlides(slideIndex += n);// tăng giảm để chuyển hình trước sau
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);// set là hình để show lên
+        }
+
+        function showSlides(n) { // show hình chỉ định hiện tại 
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

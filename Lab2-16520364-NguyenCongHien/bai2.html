@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="lab2.css">
+</head>
+
+<body>
+    <nav id="main-nav">
+        <!-- Sample menu definition -->
+        <ul id="main-menu" class="sm sm-blue">
+            <li><a href="https://uit.edu.vn">Home</a></li>
+            <li><a href="https://uit.edu.vn">About</a></li>
+            <li><a href="https://uit.edu.vn">Download</a></li>
+            <li><a href="https://uit.edu.vn">Support</a></li>
+            <li><a href="https://uit.edu.vn">Docs</a></li>
+            <li class="dropdown">
+                <a id="a">Sub test</a>
+                <ul id="myDropdown" class="dropdown-content">
+                    <li><a href="#">Dummy item</a></li>
+                    <li><a href="#">Dummy item</a></li>
+                    <li><a href="#" class="disabled">Disabled menu item</a></li>
+                    <li><a href="#">Dummy item</a></li>
+                    <li><a href="#">more...</a>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Mega menu</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".dropdown").mouseenter(function () { // khi chỉ chột vào tag có class dropdown 
+                $( "#myDropdown" ).stop(); // hủy các jquery khác ở tag có id myDropdown
+                $("#myDropdown").animate({ // sử dụng animation để chỉnh chiều cao 250px và width 180px 
+                    height: '250px',
+                    width: '180px'
+                })
+            });
+            $(".dropdown").mouseleave(function () {  // khi chỉ chột ra khỏi tag có class dropdown 
+                $( "#myDropdown" ).stop();// hủy các jquery khác ở tag có id myDropdown
+                $("#myDropdown").animate({// sử dụng animation để chỉnh chiều cao 0px và width 180px 
+                    height: '0px',
+                    width: '180px',
+                });
+            })
+        });
+    </script>
+</body>
+
+</html>
